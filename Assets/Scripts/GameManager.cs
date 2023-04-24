@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f / slowness;
         Time.fixedDeltaTime = Time.fixedDeltaTime / slowness;
-        yield return new WaitForSeconds(2f / slowness);
+        yield return new WaitForSeconds(4f / slowness);
         Time.timeScale = 1f;
         Time.fixedDeltaTime = Time.fixedDeltaTime * slowness;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
